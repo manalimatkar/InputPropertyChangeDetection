@@ -1,6 +1,11 @@
 <h5>Child Component</h5>
 <p>
-  <strong>Message From Parent: </strong>{{ message }}
+  <strong>String Message</strong><br>
+  {{ message }}
 </p>
-
-
+<p>
+  <strong> Message Object </strong><br>
+  <span class="text-danger font-weight-bolder">{{ messageObj.author }} </span>
+  Says
+  <span class="text-success">{{ messageObj.text }}</span>
+</p>

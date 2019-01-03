@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Message } from '../my-child/message';
 
 @Component({
   selector: 'app-my-child',
@@ -8,9 +9,9 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MyChildComponent implements OnInit {
 
   @Input() message: string; 
+  @Input() messageObj: any;
 
-  constructor() {
-   
+  constructor() {   
   }
 
   ngOnInit() {
