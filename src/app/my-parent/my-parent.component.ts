@@ -10,6 +10,8 @@ export class MyParentComponent implements OnInit {
   parentMessage: string = "Parent Says Hello!!!!";
   
   messageObj: any;
+  
+  messageList: any = ["Hello!!", "Hey!!"];
 
   constructor() {
    

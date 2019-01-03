@@ -8,9 +8,9 @@ import { Message } from '../my-child/message';
 })
 export class MyChildComponent implements OnInit {
 
-  @Input() message: string; 
-  @Input() messageObj: any;
-
+  @Input() message:string; 
+  @Input() messageObj:any;
+  @Input() messageList:any;
   constructor() {   
   }
 

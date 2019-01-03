@@ -1,11 +1,21 @@
 <h5>Child Component</h5>
-<p>
+<div>
   <strong>String Message</strong><br>
   {{ message }}
-</p>
-<p>
+</div>
+<hr>
+<div>
   <strong> Message Object </strong><br>
-  <span class="text-danger font-weight-bolder">{{ messageObj.author }} </span>
+  <span class="text-danger">{{ messageObj.author }} </span>
   Says
   <span class="text-success">{{ messageObj.text }}</span>
-</p>
+</div>
+<hr>
+<div>
+  <strong> Message Array </strong><br>
+  <ul class="text-center pl-0">
+    <li *ngFor="let m of messageList">
+      <span>{{ m }}</span>
+    </li>
+  </ul>
+</div>
