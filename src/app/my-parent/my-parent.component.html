@@ -1,8 +1,9 @@
 <div class="jumbotron">
   <h3>Parent Component</h3>
   <div>
-    <button type="button" class="btn btn-outline-primary mr-3">Update Object</button>
-    <button type="button" class="btn btn-outline-info">Update Array</button>
+    <button type="button" class="btn btn-outline-primary mr-3" (click)="updateMessageObject()">Update Object</button>
+    <button type="button" class="btn btn-outline-info mr-3" (click)="updateMessageArray()">Update Array</button>
+    <button type="button" class="btn btn-outline-info" (click)="updateMessageString()">Update String</button>
   </div>
   <hr class="my-5">
   <div class="bg-light p-5">

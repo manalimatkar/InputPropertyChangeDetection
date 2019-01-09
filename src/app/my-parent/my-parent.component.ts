@@ -9,7 +9,7 @@ export class MyParentComponent implements OnInit {
 
   parentMessage: string = "Parent Says Hello!!!!";
   
-  messageObj: any;
+  messageObj: Message;
   
   messageList: any = ["Hello!!", "Hey!!"];
 
@@ -22,6 +22,27 @@ export class MyParentComponent implements OnInit {
       text: 'Hello!!',
       author: "Tony"
     }
+  }
+
+  updateMessageObject() {
+    // this.messageObj.text = "Howdy!! There, how are you???";
+    
+    this.messageObj = {
+      text: "Howdy!! There, how are you???",
+      author: "Tony"
+    }
+  }
+
+  updateMessageArray() {
+    
+    // this.messageList.push("Howdy!!");
+    
+    this.messageList = this.messageList.concat("How are you?");
+    
+  }
+
+  updateMessageString() {
+    this.parentMessage = "New message for you";
   }
 
 }
